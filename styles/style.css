@@ -1,1 +1,358 @@
-/* место для вашего кода */
+/* -------------HEADER------------------------------------------------------------------------------------------------------------------------------------- */
+
+.wrapper_big {
+  padding: 0 24px;
+}
+/* решить проблему с расстоянием между элементами */
+.wrapper__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 92px;
+  padding-bottom: 96px;
+}
+
+.header__nav {
+  margin-left: 26.52px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+}
+
+.nav__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-underline-offset: 4px;
+  list-style-type: circle;
+}
+
+.nav__item_active a {
+  text-decoration: none;
+}
+
+.nav__item_active {
+  list-style-type: none;
+}
+/* размеры не сходятся с макетом */
+.header__logo {
+  margin-right: 184px;
+  margin-left: 36px;
+}
+
+.logo__image {
+  width: 100%;
+  max-width: 148px;
+}
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.header__contacts-block {
+  margin-right: 28px;
+}
+
+.contacts-block__phone,
+.contacts-block__email {
+  text-underline-offset: 3.5px;
+}
+
+.contacts-block__email {
+  margin-bottom: 1px;
+}
+
+.contacts-block__address {
+  font-style: normal;
+}
+
+/* -------------MAIN------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------COVER------------------------------------------------------------------------------------------------------------------------------------- */
+
+.cover {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0 0;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.wrapper_small {
+  padding: 0 50px;
+}
+
+.wrapper__cover {
+  padding-top: 165px;
+  padding-bottom: 51px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__heading {
+}
+.heading__title {
+  font-size: 100px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 40px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading__aligned-text {
+  display: block;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 70px;
+  margin-left: 30px;
+}
+
+.heading__aligned-text_center {
+  text-align: center;
+}
+.heading__aligned-text_right {
+  text-align: end;
+}
+.cover__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 135px;
+}
+
+.cover__introduction {
+  margin-left: 28px;
+  margin-right: 79px;
+}
+.introduction {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.4;
+  text-transform: uppercase;
+  word-spacing: 18.7px;
+  white-space: nowrap;
+}
+.cover__button {
+}
+.button {
+  background-color: transparent;
+  padding: 12px 31px 11px 31px;
+  border: 1px solid #fff;
+}
+.cover__button-link {
+  font-size: 22px;
+  line-height: 1.17;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* -------------LOTS------------------------------------------------------------------------------------------------------------------------------------- */
+
+.lots {
+  margin-top: 179px;
+  margin-bottom: 146px;
+}
+.wrapper {
+}
+.wrapper_big {
+}
+.wrapper__lots {
+}
+.lots__heading,
+.lots__body-more-link {
+  margin-left: 40px;
+}
+
+.lots__body {
+  margin-top: 27px;
+  text-underline-offset: 3.5px;
+}
+
+.lots__body-cards-list {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.lots__card-item {
+  list-style: none;
+  flex-grow: 1;
+}
+
+.lots__card-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  min-height: 563px;
+  width: 334px;
+}
+
+/* разобраться с шириной, чтобы работало flex grow */
+
+.lots__card {
+  line-height: 1.2;
+  color: #fff;
+  position: relative;
+  padding: 51px 40px 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.card_type_art {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.card__title, 
+.card__description {
+  z-index: 1;
+  position: relative;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.lots__body-more-link {
+  font-size: 20px;
+  line-height: 1.17;
+}
+
+/* -------------ABOUT------------------------------------------------------------------------------------------------------------------------------------- */
+
+.about {
+  margin-bottom: 180px;
+}
+
+.wrapper__about {
+  display: flex;
+  /* gap: 72px; */
+  align-items: start;
+  /* justify-content: space-between; */
+}
+
+.about__logo {
+  margin-top: 35px;
+  margin-left: 47px;
+  height: 240px;
+  width: 100%;
+  max-width: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 60%;
+
+}
+
+.about__body {
+  margin-top: 133px;
+  margin-left: 72px;
+  max-width: 693px;
+}
+
+.about__heading {
+  margin-bottom: 100px;
+}
+
+.about__description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__description-text {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: .1px;
+}
+
+/* -------------FOOTER------------------------------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+}
+
+.wrapper__footer {
+  margin-bottom: 88px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav-item {
+  text-align: center;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.footer__nav-item a {
+  text-underline-offset: 3.5px;
+}
+
+.footer__nav-item_active a{
+  text-decoration: none;
+}
+
+.media-links__list {
+  display: flex;
+  gap: 48px;
+}
+.media-links__item {
+  max-width: 48px;
+  list-style: none;
+}
+.media-links__item-image {
+  width: 100%;
+}
