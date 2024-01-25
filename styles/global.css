@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth
+}
+
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
+  /* font-size: 0; */
 }
 
 h1,
@@ -44,6 +49,10 @@ h3 {
   font-size: 22px;
 }
 
-.no-letter-spacing {
-  letter-spacing: 0;
+.wrapper_small {
+  padding: 0 50px;
+}
+
+.wrapper_big {
+  padding: 0 24px;
 }
