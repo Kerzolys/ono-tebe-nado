@@ -39,14 +39,14 @@ img {
 }
 
 h2 {
-  font-size: 22px;
-}
-
-h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.17;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .wrapper_small {
